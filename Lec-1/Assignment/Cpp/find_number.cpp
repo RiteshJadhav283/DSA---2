@@ -16,18 +16,18 @@ int main()
     int a;
     cout<<"Enter the number you want to find: ";
     cin>>a;
-    int b;
+    bool b=false;
 
     for(int i=0;i<size;i++)
     {
         if(arr[i]==a)
         {
             cout<<"The Element "<<a<<" found at index "<<i;
-            b=5;
+            b=true;
             break;
         }
     }
-    if(b!=5)
+    if(!b)
     {
         cout<<"The Element is not present in the array.";
     }
